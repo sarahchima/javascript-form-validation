@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Javascript Form Validation</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <main class = "form">
+  <h1>Sign Up </h1>
+  <form   name="myForm" action=" "
+  onsubmit="return validateForm();" method="post">
+    
+  <input type="text" id="fname" placeholder = "First Name" required = "true" autofocus>
+    
+ <input type="text" id="lname" placeholder = "Last Name" required = "true">
+    
+    <input type="email" id="email" required = "true" placeholder = "Email">
+    
+    <input type="password" id = "password" name="password" required = "true" placeholder = "Password">
+    
+    <meter max = "4" id = "password-meter" class = "display-none" ></meter><p id="password-meter-strength" class="display-none">
+</p>
+    <input type="password" name="conpassword" id = "conpassword" required="true" placeholder = "Confirm Password" >
+    
+   <p id = "error"></p>
+    
+   <input type="submit" value="Submit" id =  "continue">
+  </form>
+  
+</main>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/zxcvbn/4.2.0/zxcvbn.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/validate.js/0.11.1/validate.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
